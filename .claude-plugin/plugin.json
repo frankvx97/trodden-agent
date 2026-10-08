@@ -1,0 +1,7 @@
+{
+  "name": "trodden",
+  "description": "Plan, build, self-test and analyse usability tests of coded prototypes with Trodden. Connects Trodden's MCP server and adds three skills: plan a study, build and self-test it, analyse the results.",
+  "version": "0.1.0",
+  "author": { "name": "Trodden" },
+  "keywords": ["usability testing", "user research", "prototypes", "ux"]
+}

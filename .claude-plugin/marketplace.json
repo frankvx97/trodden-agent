@@ -1,0 +1,6 @@
+{
+  "name": "trodden-agent",
+  "description": "Trodden for AI agents: the Trodden MCP server plus skills to plan, build and analyse usability tests.",
+  "owner": { "name": "Trodden" },
+  "plugins": [{ "name": "trodden", "source": "./" }]
+}
