@@ -2,7 +2,7 @@
   "mcpServers": {
     "trodden": {
       "type": "http",
-      "url": "https://waypoint-usability-staging.netlify.app/mcp"
+      "url": "https://dev.usetrodden.com/mcp"
     }
   }
 }
