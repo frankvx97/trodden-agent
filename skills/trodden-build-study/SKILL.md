@@ -1,6 +1,6 @@
 ---
 name: trodden-build-study
-description: Build, wire up and self-test a Trodden usability study from a plan. Writes the whole study in one call, adds Trodden's script tag to the prototype's code, checks the install, does every Path in a preview to prove the success rules fire, and prepares it for the designer to publish. Use when asked to create, build, set up, fix or preview a Trodden study, install the Trodden snippet, or get a study ready to publish.
+description: Build, wire up and self-test a Trodden usability study from a plan. Writes the whole study in one call, adds Trodden's script tag to the prototype's code, checks the install, does every Path in a preview to prove the success rules fire, and prepares it for the designer to publish. Use when asked to create, build, set up, fix or preview a Trodden study, install the Trodden snippet, or get a study ready to publish, and when the designer wants to put a flow, screen or prototype in front of people, users or participants and a plan exists. When "test this flow" could mean automated QA or a usability study with people, ask which one first; your preview checks the success rules and never replaces participants.
 ---
 
 # Build and self-test a Trodden study

@@ -1,6 +1,6 @@
 ---
 name: trodden-analyze-results
-description: Analyse a Trodden usability study and write up the findings honestly. Pulls results and participants' written answers, reports success on each Path with the 95% intervals Trodden computes, separates what happened from what it means, rates severity provisionally, quotes participants verbatim, and proposes prototype fixes and a retest. Use when a study has closed, when someone asks how a usability test went, or for findings, a report, a deck or a readout from Trodden data.
+description: Analyse a Trodden usability study and write up the findings honestly. Pulls results and participants' written answers, reports success on each Path with the 95% intervals Trodden computes, separates what happened from what it means, rates severity provisionally, quotes participants verbatim, and proposes prototype fixes and a retest. Use when a study has closed, when someone asks how a usability test went or what participants did and where they struggled, or for findings, a report, a deck or a readout from Trodden data.
 ---
 
 # Analyse a Trodden study
