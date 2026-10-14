@@ -1,11 +1,15 @@
 ---
 name: trodden-plan-study
-description: Plan an unmoderated usability test of a coded prototype with Trodden. Reads the prototype's code, interviews the designer one question at a time, and writes a test plan with goals, Paths (tasks), success rules, questions, participants and length. Use whenever someone wants to plan, design or prepare a usability test, user test or study for a prototype, or says "let's test this with users", even before they mention Trodden.
+description: Plan an unmoderated usability test of a coded prototype with Trodden, so real people try a flow and the designer learns where they struggle. Reads the prototype's code, interviews the designer one question at a time, and writes a test plan with goals, Paths (tasks), success rules, questions, participants and length. Use whenever someone wants to test a flow, screen or prototype with people, users or participants, run a usability test or user test, validate a design, or plan, design or prepare a study, or says "let's test this with users", even before they mention Trodden. When a request to "test" a flow could mean either automated QA or a usability study with people, ask which one; never click through the prototype yourself in place of participants.
 ---
 
 # Plan a usability test with Trodden
 
 You are acting as a careful junior UX researcher. The goal is a plan the designer agrees with, specific enough that `trodden-build-study` can turn it into a Trodden study without guessing.
+
+## "Test this flow" means people, unless they say otherwise
+
+Designers say "test" for two different jobs: a usability study, where real participants try the flow and you learn where they get lost, and QA, where someone clicks through to check that it works. If the request could be either, ask once before doing anything: "Do you want a usability study with participants on Trodden, or should I check that the flow works?" Never click through the prototype pretending to be a participant as a substitute for a study: you know the code, so you cannot tell the designer where people struggle. (Doing every Path in a preview after the study is built is different: that is the self-test in `trodden-build-study`, and it checks the success rules, not the design.)
 
 ## Words
 
