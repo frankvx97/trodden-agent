@@ -2,12 +2,10 @@
 
 ## Numbers
 
-- **Task success:** use `successes`/`attempts` and `successInterval95`, which is Trodden's adjusted-Wald 95% interval, computed for you. Example: "11 of 14 (95% CI 52–93%)".
-- **Verified vs marked done:**
-  - `verifiedSuccesses` fired a success rule;
-  - the rest pressed Done themselves.
-
-  Say which, and treat manual-only tasks as self-reported.
+- **Task success:** lead with `verifiedSuccesses`/`attempts` and `verifiedInterval95`, Trodden's adjusted-Wald 95% interval, computed for you. Example: "11 of 14 verified (95% CI 52–93%)".
+- **Done without the rule:** `doneWithoutRule` counts people who pressed Done although the success rule never fired. They believed they had finished; nothing confirms it. Report them on their own line ("2 more said they were done, but the rule never fired") and never add them to verified success. A high ease rating next to an unverified Done usually means the participant stopped one step early without knowing it.
+- **Self-reported Paths:** when `successMeasure` is `self_reported`, the Path has only a Done rule, so `selfReportedSuccesses` is the measure. Call it self-reported every time you quote it.
+- **Sample against the plan:** `sample` says how many finished and, when the designer set one, how many were planned. When `sample.note` is present, open the report with it: a study closed at 1 of 5 is a pilot, and its findings are hypotheses for the next round.
 - **Small samples:** under about 20 participants, report counts, not percentages ("4 of 5"). Words like "most" need the count next to them.
 - **Time on task:** successful attempts only (`medianSeconds`). Never use time on failed attempts as efficiency.
 - **SEQ:** `seqAverage` on 1–7. About 5.5 is average and below 5 is harder than typical.

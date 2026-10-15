@@ -18,7 +18,7 @@ Trodden is an invite-only pilot: sign in to Trodden on the web once before conne
 |---|---|---|
 | Claude Code (tools and skills) | `claude plugin marketplace add frankvx97/trodden-agent && claude plugin install trodden@trodden-agent && claude mcp login plugin:trodden:trodden` | The browser opens to sign in. If it does not, type `/mcp` in Claude Code, choose **plugin:trodden:trodden → Authenticate** |
 | Claude Code (tools only) | `claude mcp add --transport http --scope user trodden https://<your Trodden address>/mcp && claude mcp login trodden` | The browser opens to sign in |
-| Codex | `codex mcp add trodden --url https://<your Trodden address>/mcp && codex mcp login trodden` | The browser opens to sign in |
+| Codex (tools and skills) | `codex plugin marketplace add frankvx97/trodden-agent && codex plugin add trodden@trodden-agent && codex mcp login trodden` | Adds the server and the skills; the browser opens to sign in |
 | Claude app or Cowork | Customize → Connectors → Add custom connector → paste `https://<your Trodden address>/mcp` | Sign in. Claude Code on the same account picks it up |
 | ChatGPT | chatgpt.com/plugins → **+** → Add custom MCP server → paste the URL | Sign in |
 | Cursor, Copilot, Gemini CLI and others (skills) | `npx skills add frankvx97/trodden-agent` | Connect the MCP server in that agent's settings |
