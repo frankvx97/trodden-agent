@@ -30,9 +30,15 @@ If you have the prototype's code, read it first:
 
 Turn what you find into guesses the designer can confirm ("I see `/checkout` and a 'Order placed' toast. Is checkout the flow to test?"). Specific details from the code make better options than open questions.
 
+If the study already exists in Trodden, call `trodden_report_progress` with `planning`, and with `needs_input` (the question as `message`) each time you wait for the designer's answer, so the study in Trodden says where things stand. The designer's builder is view-only while you report these stages; report `stopped` if you end the planning without building, or they cannot edit until they take over.
+
 ## 2. Interview, one question at a time
 
+**Ask first whether there is anything to start from** (B3): a test script, a research brief, notes from a previous round, a study in Trodden to repeat, or a list of tasks. Ask for a file path or a paste. If there is one, read it before anything else and plan from it: most of the must-asks below may already be answered there, so only confirm them.
+
 If your client has a structured question tool (Claude Code's `AskUserQuestion`), use it: 2–4 options, the likely answer first, a short reason for each. Otherwise ask in chat, one question per message, each with a suggested default. Stop asking once the must-asks are answered; the rest can arrive as edits to the draft.
+
+If the designer wants to go faster, or already handed you a script or brief, propose the whole plan in one message with a default for every must-ask and let them correct it. Still get an explicit yes on the decision, the participants (and their language) and each success rule: those are not yours to assume.
 
 Must-ask, in order:
 
@@ -40,10 +46,11 @@ Must-ask, in order:
 2. **The flows to test**, and which one or two matter most. Confirm them against the routes you found.
 3. **How you know someone finished each one.** This becomes the success rule: a page only success reaches, a confirmation message, or a click that completes the job.
 4. **Who the participants are.** Ask about behaviours and experience, not demographics, and about who to leave out (employees, people who already know the product).
-5. **Find problems or measure?** Finding problems needs about 5 people per user group. Measuring a number needs about 20–40. Default: find problems.
-6. **Known worries.** "Where do you expect people to struggle?"
-7. **Constraints:** device, language, deadline, incentive, and which data in the prototype is fake (Paths must use sample values).
-8. **How far should I go?** Offer three answers:
+5. **The participants' language.** "Which language will participants read the study in?" Ask it outright: the language the designer writes to you in says nothing about the participants. It sets every button and the Path panel, and every text you write goes in it.
+6. **Find problems or measure?** Finding problems needs about 5 people per user group. Measuring a number needs about 20–40. Default: find problems.
+7. **Known worries.** "Where do you expect people to struggle?"
+8. **Constraints:** device, deadline, incentive, and which data in the prototype is fake (Paths must use sample values).
+9. **How far should I go?** Offer three answers:
    - draft only;
    - draft and test it myself in a preview (the default);
    - all the way to a study ready to publish, which you then publish with one click in Trodden.

@@ -9,6 +9,7 @@ Sources: NN/g, MeasuringU (Sauro & Lewis), GOV.UK Service Manual. Exact wordings
 - **Realistic scenario with a reason:** "You are hosting a dinner next Friday. Share the recipe group with your team so everyone can add dishes." Not "Add a link."
 - **No UI labels or steps.** Never use the prototype's button, link or menu text in a task. Describe the goal, not the path. Check every task against the strings in the code.
 - **One goal per task.** Split "find X and change Y" into two tasks.
+- **Short enough to read in the panel.** Participants read the task in a small panel while the prototype sits behind it. Keep it to a one-sentence scenario and one goal, about 40 words. When the task needs several facts (a guest's name, a date, an amount), put those facts in a short bullet list under the goal (each line starting with "- "). Bullets are for facts, never for steps: a numbered "1. Open… 2. Click…" turns the test into following instructions.
 - **Give every detail needed to finish** ("the Weekly meeting link"). Specific data is not a clue.
 - **Actionable:** ask people to do it, not to say how they would.
 - **One observable end state.** That is the success rule. If none exists, rewrite the task, or make it self-reported (manual) and say so in the report.

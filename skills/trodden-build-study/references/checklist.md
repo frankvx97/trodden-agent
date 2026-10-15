@@ -21,7 +21,8 @@ Check each item. Fix it rather than reporting it.
 
 **Study**
 - [ ] Welcome first, thank-you last, and a consent text that says what is recorded if the designer changed it.
-- [ ] The language matches the participants.
+- [ ] `settings.language` is the participants' language, and every text they read is written in it.
+- [ ] The panel corner (`settings.widgetPosition`) does not cover a button any Path needs, on a laptop or a phone.
 - [ ] The estimated length is within budget: about 90 seconds per task plus reading and questions.
 - [ ] Routing has no dead ends, and jumps go only to blocks after the tasks.
 - [ ] `prototypeUrl` is the deployed address participants will open, not `localhost`, unless this is only a self-test.
