@@ -25,6 +25,17 @@ Trodden is an invite-only pilot: sign in to Trodden on the web once before conne
 
 When you sign in from a terminal agent, the sign-in page warns about an "unverified application" on `localhost`. That is the agent waiting for your approval on your own computer, which is expected.
 
+## Updates
+
+Trodden's tools live on Trodden's server, so they are always current. The skills are copied to your computer when you install them, and each release raises the plugin's version number so your agent can tell there is a newer copy.
+
+| Agent | How to get new skills |
+|---|---|
+| Claude Code | Once: type `/plugin`, open **Marketplaces**, choose **trodden-agent**, then **Enable auto-update**. Claude Code then updates in the background and asks you to run `/reload-plugins`. Without it: `claude plugin update trodden@trodden-agent`, then restart Claude Code |
+| Codex | `codex plugin marketplace upgrade trodden-agent`, then start a new session. If the skills did not change, run the install line again |
+| Cursor, Copilot, Gemini CLI and others | Run `npx skills add frankvx97/trodden-agent` again |
+| Claude app, Cowork, ChatGPT | Nothing to do: these use only the server |
+
 ## Try it
 
 In your prototype's folder, ask your agent:

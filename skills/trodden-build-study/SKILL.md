@@ -33,6 +33,10 @@ For each rule, confirm in the code that it fires on the true end state and not b
 - a dialog opening is not success;
 - a failed or empty submit must not show the success text.
 
+### A/B Paths
+
+For a Path that compares versions, write `task.abTest` (see `trodden_get_study_format`): the task's own `startPath` and `successRules` are the first version, `abTest.versions` the others, each with its own route and its own rule checked in that version's code. Versions must be routes of the same deploy. If the code has no separate route per version, do not save an A/B Path: ask the designer to add the routes first. Use the mode the plan names (`between` or `within`).
+
 ## 3. Check the draft before saving
 
 Run every item in `references/checklist.md`. Fix what fails rather than listing it.
@@ -44,6 +48,8 @@ Run every item in `references/checklist.md`. Fix what fails rather than listing 
 - **Published study:** start an editable copy with `trodden_create_study` and `fromStudyId`.
 
 Set `targetParticipants` to the number of finished participants the plan calls for, so Results can say how far along the study is.
+
+Leave `settings.heatmaps` on (the default) unless the plan says the prototype is confidential: Trodden then keeps a picture of each page to draw heatmaps. The preview takes the first pictures, so preview every screen a Path goes through.
 
 Always set `settings.language` to the participants' language from the plan, and write every text participants read in it: welcome, scenario, Path titles (they show in the panel), instructions, questions and answers. If a warning says the text reads as another language, ask the designer which one participants speak; do not just flip the setting.
 
@@ -74,7 +80,9 @@ While previewing:
 - Look at where the Trodden panel sits at a laptop width (about 1280 px, a 360 px card or a pill in the chosen corner) and on a phone (a full-width bar at the bottom, whatever the corner). Bottom-right is where fixed action bars put "Continue" and "Confirm": check the panel covers none of the buttons a Path needs, collapsed or open. Choose the corner that covers least (`settings.widgetPosition`, or `trodden_update_live_settings` once live).
 - Keep screenshots and browser files in a temporary folder outside the designer's repository. Never ask the designer to run `rm`; clean up after yourself if you can.
 
-Then call `trodden_get_preview_report`. Every Path (each task in the report) needs `ruleFired: true` on the current revision. Fix whatever it reports, save, and preview again. Editing the study makes the old preview stale.
+A study with A/B Paths runs one version per preview: start one preview per version (`trodden_start_preview` with `version: 0`, then `1`, and `2` if there is a third) and do the Path each time. The report lists each version on its own row.
+
+Then call `trodden_get_preview_report`. Every Path (each task in the report, and each version of an A/B Path) needs `ruleFired: true` on the current revision. Fix whatever it reports, save, and preview again. Editing the study makes the old preview stale.
 
 ## 7. Stop where you were told
 
