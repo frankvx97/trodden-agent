@@ -49,6 +49,7 @@ Must-ask, in order:
 5. **The participants' language.** "Which language will participants read the study in?" Ask it outright: the language the designer writes to you in says nothing about the participants. It sets every button and the Path panel, and every text you write goes in it.
 6. **Find problems or measure?** Finding problems needs about 5 people per user group. Measuring a number needs about 20–40. Default: find problems.
 7. **Known worries.** "Where do you expect people to struggle?"
+   - **Comparing designs?** If the designer wants to compare two or three versions of a flow ("is the new checkout better?"), plan an **A/B Path**: the same Path on each version. Ask which mode they want: *each person tries one version* (a clean comparison; needs about twice the participants, at least 5 per version for big differences) or *everyone tries every version* (in a rotating order; fewer people, and Trodden can ask which one was easier). Then check the code: every version must be its own route in the same prototype (for example `/v1/checkout` and `/v2/checkout`), one deploy with one script tag. If the versions are not separate routes, stop and ask the designer to add them (or offer to, if you can change the code) before planning further.
 8. **Constraints:** device, deadline, incentive, and which data in the prototype is fake (Paths must use sample values).
 9. **How far should I go?** Offer three answers:
    - draft only;
@@ -65,7 +66,7 @@ In a repository, write `trodden/<study-slug>/plan.md`. Otherwise put it in the c
 2. Goals (2–4) and hypotheses ("We believe X; we will know if Y")
 3. Method: unmoderated, find problems or measure, device, language, estimated length
 4. Participants: profile, who to exclude, target number plus 20–30% extra, screener questions if any
-5. Flow: welcome → (screener) → context → Paths, each with its success rule and SEQ → questions → thank you
+5. Flow: welcome → (screener) → context → Paths, each with its success rule and SEQ → questions → thank you. For an A/B Path: its versions, the route of each, the mode, and a success rule per version
 6. Paths: for each, the participant's scenario, the start page, the success rule and why it can only fire on success
 7. Questions: after each task (SEQ) and at the end
 8. Length estimate: about 90 seconds per Path plus reading and questions. Aim for 10–15 minutes, or under 10 without an incentive.

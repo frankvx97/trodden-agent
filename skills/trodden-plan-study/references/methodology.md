@@ -50,6 +50,7 @@ Sources: NN/g, MeasuringU (Sauro & Lewis), GOV.UK Service Manual. Exact wordings
 - **Find problems:** about 5 per distinct user group. Better: 3 rounds of 5 with fixes in between. Report counts ("4 of 5"), not percentages.
 - **Measure:** 20–40. About 40 gives roughly ±15% at 95% confidence.
 - Recruit 20–30% extra; unmoderated sessions drop out.
+- **Comparing versions (A/B Paths):** *each person tries one version* needs the numbers above **per version**; only large differences (say 80% vs 30% success) show with 5–10 per version. *Everyone tries every version* needs about half as many people, and the rotating order evens out learning from the first version without removing it. A difference only counts when Trodden's interval for it excludes zero.
 
 ## Consent
 
