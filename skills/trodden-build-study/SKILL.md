@@ -49,7 +49,7 @@ Run every item in `references/checklist.md`. Fix what fails rather than listing 
 
 Set `targetParticipants` to the number of finished participants the plan calls for, so Results can say how far along the study is.
 
-Leave `settings.heatmaps` on (the default) unless the plan says the prototype is confidential: Trodden then keeps a picture of each page to draw heatmaps. The preview takes the first pictures, so preview every screen a Path goes through.
+Leave `settings.heatmaps` on (the default) unless the plan says the prototype is confidential: Trodden then keeps a picture of each page to draw heatmaps. Your preview takes the pictures, so open every screen each Path goes through, including the one after the goal (a confirmation page). While the study is a draft, each preview takes them again; once the designer publishes they are frozen, so do the last preview after the last change to the prototype. A screen nobody previewed is pictured by the first participant who opens it.
 
 Always set `settings.language` to the participants' language from the plan, and write every text participants read in it: welcome, scenario, Path titles (they show in the panel), instructions, questions and answers. If a warning says the text reads as another language, ask the designer which one participants speak; do not just flip the setting.
 
